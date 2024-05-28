@@ -20,7 +20,7 @@ body {
   background-size: cover;
   width: 100vw;
   height: 100vh;
-  padding: 3rem;
+  padding: 6rem;
 }
 
 .calculator {
@@ -40,28 +40,30 @@ body {
 .output {
   grid-column: 1 / -1;
   background-color: rgba(0, 0, 0, 0.75);
-  border-radius: 1rem;
-  margin-bottom: 1rem;
-  padding: 0.5rem 1rem;
-
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
-  justify-content: center;
+  justify-content: space-around;
   align-items: flex-end;
-}
+  padding: 1rem;
+  word-wrap: break-word;
+  word-break: break-all;
 
-.output .previous-operand,
-.output .current-operand {
-  color: #fff;
+  margin-bottom: 1rem;
+  gap: 0.5rem;
+  border-radius: 1rem;
 }
 
 .output .previous-operand {
   font-size: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 0.3rem;
+  flex-grow: 1;
 }
 
 .output .current-operand {
   font-size: 2rem;
+  color: #fff;
+  flex-grow: 1;
 }
 
 button {
